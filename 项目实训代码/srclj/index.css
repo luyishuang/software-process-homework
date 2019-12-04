@@ -1,0 +1,253 @@
+@import '~antd/dist/antd.css';
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  background-color: white;
+}
+ul,li,a{
+  list-style:none;
+}
+body{
+    background: url('./img/7.jpg');
+    background-position-y: -120px;
+    background-size:cover;
+    overflow: hidden;
+}
+.bg{
+    margin:0 auto;
+}
+.bg0{
+    margin:0 auto;
+    width:1200px;
+}
+.top{
+    margin:0 auto;
+    margin-top:50px;
+    width:570px;
+    height: 450px;
+}
+.title{
+    color:#41AA3E;
+    padding-left:135px;
+    padding-top: 30px;
+    padding-bottom:40px;
+    font-size: 34px;
+    border-bottom:1px solid grey;
+    background: url('./img/14.png') no-repeat ;
+}
+.content{
+    font-size:20px;
+    padding-left: 30px;
+}
+.con1{
+    padding-left:80px;
+    padding-top:56px;
+}
+.con2{
+    padding-left:80px;
+    padding-top:15px;
+}
+.content>.con2:first-child{
+    padding-top:30px;
+}
+.con2 input{
+    font-size: 16px;
+    width:200px;
+    height:30px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+.con1 input{
+    font-size: 16px;
+    width:200px;
+    height:30px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+.con button{
+    font-size:20px;
+    width:150px;
+    height:50px;
+    margin:50px 60px 30px 50px;
+    background-color:rgba(6, 190, 6, 0.5);
+    color:white;
+    border:0;
+    border-radius: 6px;
+}
+.left{
+    position: fixed;
+    width: 260px;
+    background-color: rgba(0, 128, 0, 0.5);
+    border-radius: 30px;
+    height:657px;
+}
+.left img{
+    padding-left: 42px;
+}
+.left li{
+    padding-top: 32px;
+    padding-bottom:32px;
+    font-size: 20px;
+    border-bottom: 1px dotted black;
+}
+.left a{
+    margin:0px 80px;
+    color: rgba(255, 255, 255);
+    
+
+}
+.out{
+    float: right;
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(0, 128, 0, 0.5);
+    width: 870px;
+}
+.syout{
+    height: 635px;
+}
+.syout p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.syout h1{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.syin{
+    width:750px;
+    margin:0 auto;
+}
+.syin div{
+    float:left;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    background: url('./img/13.png');
+    background-size:cover;
+    text-align: center;
+    margin-top: 30px;
+    display:block;
+}
+.syin p{
+    margin-left: -10px;
+    margin-top: 42px;
+}
+.psup{
+    width: 870px;
+    height: 90px;
+    border-bottom:1px solid grey;
+}
+.psup span{
+    line-height: 90px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+.psup input{
+    margin-left: 80px;
+    padding-left: 5px;
+    width: 280px;
+    height: 40px;
+    border-radius: 9px 0 0 9px;
+    border: 0;
+    position: relative;
+    background: rgba(255, 255, 255, 0.664);
+}
+.psup button{
+    opacity: 0.664 ;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius:0 9px 9px 0;
+    background: url('./img/search.png') ;
+    position: absolute;
+    top: 49px;
+}
+.psmiddle{
+    width: 870px;
+    height: 60px;
+    border-bottom: 1px solid grey;
+}
+.psmiddle input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.psmiddle span{
+    padding-left: 110px;
+    font-size: 18px;
+}
+.psdown{
+    width: 870px;
+}
+.psdown li{
+    padding-bottom: 10px;
+}
+.psdown input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.psdown span{
+    padding-left: 90px;
+    font-size: 18px;
+}
+.psdown button{
+    background: rgba(255, 255, 0, 0.308);
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+    margin-right: 8px;
+}
+.photo{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.htdown{
+    width: 870px;
+}
+.htdown input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.htdown span{
+    padding-left: 65px;
+    font-size: 18px;
+}
+.htdown button{
+    background: rgba(255, 255, 0, 0.308);
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+.yhdown{
+    width: 870px;
+}
+.yhdown li{
+    padding-bottom: 10px;
+}
+.yhdown input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.yhdown span{
+    padding-left: 100px;
+    font-size: 18px;
+}
+.yhdown button{
+    background: rgba(255, 255, 0, 0.308);
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+}

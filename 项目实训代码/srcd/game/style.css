@@ -1,0 +1,13 @@
+.box{
+    float: left;
+}
+img{
+   width: 150px;
+   height:150px;
+}
+#puzzle{
+   font-size: 0;
+   margin:80px auto;
+   padding: 5px;
+   width: 460px;
+}
