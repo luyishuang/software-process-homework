@@ -1,34 +1,49 @@
 import React,{Component} from 'react'
-import {Link,Router} from 'react-router-dom'
+// import {Link,Router} from 'react-router-dom'
+// import { List, TextareaItem } from 'antd-mobile';
+// import { createForm } from 'rc-form';
 export default class Topic extends Component{
     constructor(){
         super();
+        this.state={
+            data:[],
+            content:''
+        }
     }
+    componentDidMount() {
+        // this.autoFocusInst.focus();
+      }
     goback=()=>{
+        // console.log(this.state.content);
         window.history.back(-1)
+    }
+    change=(e)=>{
+        this.setState({
+            content:e.target.value    
+        })
     }
     render(){
         return(
-            <div>
+            <div className='toout'>
                 <div className='topictitle'>
-                    {/* <Link to='/comm' style={{margin:'5%  16%'}}>×</Link> */}
-                    <a className='totitle1' onClick={()=>this.goback()}>×</a>
-                    <span style={{fontSize:'20px'}}>发表动态</span>
-                    <a>发表</a>
+                    <a className='a1' onClick={()=>this.goback()}>×</a>
+                    <span style={{fontSize:'22px'}}>发表动态</span>
+                    <a className='a2' >发表</a>
                 </div>
                 <div className='tobody'>
                     <div style={{float:'left',height:'80%',width:'30%'}}>
-                        <img src={require("../images/dtouxiang1.png")} className='toimg'/>
+                        <img src={require("../images/ljtouxiang3.jpg")}/>
                     </div>
                     <div style={{float:'left',height:'80%',width:'50%',padding:'10% 0'}}>
-                        <span className='tospan'>@我绝版了i</span>
+                        <span>小知</span>
+                        <input type='file'/>
                     </div>
                 </div>
                 <div className='tobodyy'>
-                    <textarea cols="40" rows="20" placeholder='请在此输入内容' style={{fontSize:'18px'}}/>
-                       
+                    <textarea cols="40" rows="20" placeholder='分享新鲜事...' value={this.state.content} style={{fontSize:'20px'}} onChange={(e)=>this.change(e)}/>
                 </div>
             </div>
         )
     }
 }
+
