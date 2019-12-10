@@ -1,0 +1,40 @@
+div>span{
+    float: left;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-right: 35px;
+}
+div>input{
+    float: right;
+    margin-top:10px;
+    border-radius: 5px;
+}
+span{
+    float: right;
+}
+.biglist{
+    clear: both;
+    margin-top:55px;
+}
+.biglist h2{
+    margin-top: 20px;
+}
+ul,div{
+    margin:0 auto;
+    width:500px;
+}
+li{
+    list-style: none;
+    line-height: 25px;
+    margin-top:10px;
+    background-color: white;
+}
+
+.biglist li button{
+    float: right;
+}
+.getin{
+    /* border:2px solid rgba(184, 173, 173, 0.753); */
+    box-shadow: 0px 0px 2px rgba(122, 122, 245, 0.527) inset;
+    
+}
