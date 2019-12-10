@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <INPUT class="input" type=text maxLength=50 onblur="chuser();" id="csuser"  size=30 name="username">
+      <audio src="./123.mp3" autoplay="autoplay" loop="loop" controls >
+        　　<track kind="captions" />
+        　　您的浏览器不支持 audio 元素。
+        </audio>
+        <div id="loginid_info"></div>
+</body>
+<script language="JavaScript">
+    function chuser(){
+    
+    //   var csuser=document.getElementById("csuser").value;
+      var csuser = document.getElementById('csuser').value
+       if((csuser == null) || (csuser == ""))
+     {
+       document.getElementById("loginid_info").className = 'STYLE1';
+       document.getElementById("loginid_info").innerHTML = '用户名不能为空。';
+      return false;
+     }
+      else
+        if(csuser.length<6 || csuser.length>16)
+       {
+        document.getElementById("loginid_info").className = 'STYLE1';
+        document.getElementById("loginid_info").innerHTML = '用户名必须为6-16位。';
+        return false;
+       }
+       //var filter=/^\s*[.A-Za-z0-9_-]{2,16}\s*$/;
+       //if (!filter.test(username.value)) {
+        //document.getElementById("loginid_info").background='#BFDFFF'
+        //document.getElementById("loginid_info").innerHTML = '用户名必须由数字,英文或下划线组成。'
+        //return false;
+    
+       //{
+       //document.getElementById("loginid_info").innerHTML = '<font color=#red>用户名必须由数字,英文或下划线组成。</font>'
+       // return false;
+       //}
+        else{
+        GetResult(csuser)
+        document.getElementById("loginid_info").className = 'STYLE2';
+        //document.getElementById("loginid_info").innerHTML = '<font color=#0066ee>填写正确。</font>'
+       }
+    }
+    function GetResult(opr)
+    {
+    var oBao = new ActiveXObject("Microsoft.XMLHTTP");
+    var my_url="ch.asp?username="+ escape(opr);
+    oBao.open("POST",my_url,false);
+    oBao.send(null);
+    var strResult = unescape(oBao.responseText);
+    document.getElementById("loginid_info").innerHTML = strResult;
+    }
+    </script>
+</html>
