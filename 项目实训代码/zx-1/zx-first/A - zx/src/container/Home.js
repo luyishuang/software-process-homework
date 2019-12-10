@@ -13,11 +13,10 @@ export default class Home extends Component{
                 {/* <form name="search" className="searchbar" id="search" action="">
                     <input type="search" name="find" id="find" placeholder=' 请输入目的地'className='searchinput'/>
                 </form> */}
-                <div className="search-wrapper">
-                    <form className="search-input-wrapper ">
-                    <input type="search" name="find" id="find" placeholder=' 请输入目的地'className='searchinput' style={{width:'70%'}}/>
-                    </form>
-                </div>
+                <form name="search" className="searchbar" id="search" action="">
+                    <input type="search" name="find" id="find" placeholder=' 请输入目的地'className='searchinput'/>
+                </form>
+                <div style={{marginTop:'18%'}}></div>
                 <Carousel autoplay
                     autoplayInterval={2000}
                     infinite
@@ -45,15 +44,14 @@ export default class Home extends Component{
                 <Link to='/home/zuixiao'>
                 <div className="push">
                     <div className='holeft'>
-                        <p>故宫的大怪兽：让你看到一个不一样的故宫文化介绍</p>
+                        <p>故宫的大怪兽：不一样的文化介绍</p>
                     </div>
                     <img src={require('../images/dguaishou2.png')} alt='' className='horight'/>
                 </div>
                 </Link>
                 <div className="push">
                     <div className='holeft'>
-                        <p>老北京的传说：</p>
-                        <p>太和殿的龙没法儿数</p>
+                        <p>老北京的传说：太和殿的龙没法儿数</p>
                     </div>
                     <img src={require('../images/dthlong3.png')} alt='' className='horight'/>
                 </div>

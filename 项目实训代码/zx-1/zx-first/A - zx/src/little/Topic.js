@@ -26,7 +26,7 @@ export default class Topic extends Component{
         return(
             <div className='toout'>
                 <div className='topictitle'>
-                    <a className='a1' onClick={()=>this.goback()}>×</a>
+                    <a className='a1' onClick={()=>this.goback()}><img src={require('../images/fanhui.png')}className="a12" /></a>
                     <span style={{fontSize:'22px'}}>发表动态</span>
                     <a className='a2' >发表</a>
                 </div>

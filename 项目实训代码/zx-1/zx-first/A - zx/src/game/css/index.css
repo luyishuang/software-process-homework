@@ -1,20 +1,23 @@
 ul,li{padding: 0;margin: 0;list-style: none}
 .gghead2{
-  background-color: #259B24;
+  background: url('/images/lbg5.jpg') no-repeat;
+  background-size: cover;
   text-align: center;
   height: 6%;
   padding-top:4%;
   position: fixed;/*悬停搜索框的关键样式*/
   top: 0px;
   width: 100%;
-}
-.gghead2 a{
-  color: white;
-  font-size: 24px;
+  position: fixed;;
 }
 .gghead2 span{
-  color: white;
+  float: left;
+  margin-left: 25%;
+  margin-top: 2%;
   font-size: 20px;
+}
+.fanhui{
+  height: 10%;
 }
 .guoguan{
   text-align: center;

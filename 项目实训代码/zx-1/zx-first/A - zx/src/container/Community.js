@@ -7,10 +7,10 @@ export default class Community extends Component{
         return(
             <div className='lout'>
                 <div className='title'> 
-                    <div style={{fontSize:'22px',color:'white' ,float:'left',width:"30%",marginTop:'4%',marginLeft:'40%'}}>
+                    <div style={{fontSize:'22px' ,float:'left',width:"30%",marginTop:'4%',marginLeft:'40%'}}>
                         <a>社区</a>
                     </div>
-                    <Link to='/community/topic'><img src={require('../images/dplus.png')}style={{width:'10%', float:'right',marginRight:'5%',marginTop:'3%'}} /></Link>
+                    <Link to='/community/topic'><img src={require('../images/djiahao.png')}style={{width:'10%', float:'right',marginRight:'5%',marginTop:'3%'}} /></Link>
                 </div>
                 <div style={{marginTop:'17%'}} ></div>
 

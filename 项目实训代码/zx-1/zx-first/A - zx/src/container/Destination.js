@@ -1,3 +1,186 @@
+// import React ,{Component} from 'react'
+// import {Link} from 'react-router-dom'
+// import { PickerView, WhiteSpace } from 'antd-mobile';
+// import Casecade from './Casecade';
+
+// const bj = [
+//     {
+//         cityname:'北京市',
+//         list:[
+//             {
+//                 name:'紫禁城',
+//                 ename:'The Forbidden City',
+//                 picpath:'./images/dgugong.png'
+//             },
+//             {
+//                 name:'天坛',
+//                 ename:'The Forbidden City',
+//                 picpath:'./images/dtiantan.png'
+
+//             },
+//             {
+//                 name:'天安门',
+//                 ename:'The Forbidden City',
+//                 picpath:'./images/dtiananmen.png'
+//             },
+//             {
+//                 name:'颐和园',
+//                 ename:'The Forbidden City',
+//                 picpath:'./images/dyiheyuan.png'
+//             }
+//         ]
+
+//     },
+//     {
+//         cityname:'西安',
+//         list:[
+//             {
+//                 name:'紫',
+//                 ename:'The Forbidden City'
+//             },
+//             {
+//                 name:'天',
+//                 ename:'The Forbidden City'
+//             },
+//             {
+//                 name:'安门',
+//                 ename:'The Forbidden City'
+//             },
+//             {
+//                 name:'颐',
+//                 ename:'The Forbidden City'
+//             }
+//         ]
+
+//     }
+    
+// ]
+// export default class Dest extends Component{
+//     constructor(){
+//         super();
+//         this.state={
+//             cityinfor:[],
+//             value:'',
+//             list:[
+//                 {
+//                     name:'紫禁城',
+//                     ename:'The Forbidden City',
+//                     picpath:'./images/dgugong.png'
+//                 },
+//                 {
+//                     name:'天坛',
+//                     ename:'The Forbidden City',
+//                     picpath:'./images/dtiantan.png'
+    
+//                 },
+//                 {
+//                     name:'天安门',
+//                     ename:'The Forbidden City',
+//                     picpath:'./images/dtiananmen.png'
+//                 },
+//                 {
+//                     name:'颐和园',
+//                     ename:'The Forbidden City',
+//                     picpath:'./images/dyiheyuan.png'
+//                 }
+//             ]
+//         }
+//     }
+
+//     componentDidMount(){
+//         // fetch('/jq/?city=北京')
+//         // .then(res=>res.json())
+//         // .then(res=>{
+//         //     this.setState({
+//         //         cityinfor:res
+//         //     })
+//         // })
+//         var newbj = [...bj];
+//         this.setState({
+//             cityinfor:newbj
+//         })
+//     }
+
+//     getvalue=(val)=>{
+//         console.log("123 "+val);
+//         this.state.cityinfor.map((item)=>{
+//             if(item.cityname === val){
+//                 this.setState({
+//                     list:item.list
+//                 })
+//             }
+//         })
+//         this.setState({
+//             value:val
+//         })
+        
+//     }
+
+//     displayRender=(label)=>{
+//         return label[label.length - 1];
+//     }
+//     render(){
+//         return(
+//             <div>
+//                 <form name="search" className="searchbar" id="search" action="">
+//                     <input type="search" name="find" id="find" placeholder=' 请输入目的地'className='searchinput'/>
+//                 </form>
+//                 <div className='ldestination'>
+//                     <div className="dest">
+//                         <p style={{fontWeight:'bold',fontSize:'20px'}}>风俗文化介绍</p>
+//                         <div style={{textAlign:'center'}}>
+//                             <div className="hot">
+//                                 <div className='inner'>
+//                                     <p>桃符</p>
+//                                 </div>
+                                
+//                             </div>
+//                             <div className="hot2">
+//                                 <div className='inner'>
+//                                     <p>汉服</p>
+//                                 </div>
+//                             </div>
+//                             <div className="hot3" >
+//                                 <div className='inner'>
+//                                     <p>“福”字</p>
+//                                 </div>
+//                             </div>
+//                         </div>
+                        
+//                         <Casecade  getvalue={this.getvalue} style={{width:'20px',position:'relative'}}/>
+                    
+                        
+//                         <div>   
+//                             <p style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>{this.state.value}</p>
+//                             {
+//                                 this.state.list.map((item)=>(
+//                                     <Link to={{pathname:'/city/'+item.name,state:{tourist:item.name}}}>
+//                                         <div className="city" key={item.cityname}>
+//                                         <div className='inner'>
+//                                             <p className='cityp'key={item.name}>{item.name}<br/><br/>{item.ename}</p>
+//                                         </div>
+//                                         </div>
+//                                     </Link>
+//                                 ))
+//                             }
+                            
+//                             </div>
+//                         </div>
+
+
+                        
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+
+
+
+
+
+
 import React ,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import { PickerView, WhiteSpace } from 'antd-mobile';
@@ -125,6 +308,7 @@ export default class Dest extends Component{
                 <form name="search" className="searchbar" id="search" action="">
                     <input type="search" name="find" id="find" placeholder=' 请输入目的地'className='searchinput'/>
                 </form>
+                <div style={{marginTop:'22%'}}></div>
                 <div className='ldestination'>
                     <div className="dest">
                         <p style={{fontWeight:'bold',fontSize:'20px'}}>风俗文化介绍</p>
@@ -146,7 +330,7 @@ export default class Dest extends Component{
                                 </div>
                             </div>
                         </div>
-                        
+                        <div style={{height:'120px'}}></div>
                         <Casecade  getvalue={this.getvalue} style={{width:'50pxx',position:'relative'}}/>
                     
                         
