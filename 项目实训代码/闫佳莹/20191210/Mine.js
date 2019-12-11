@@ -10,7 +10,8 @@ export default class Mine extends Component{
                 </div>
                 <div>
                     <img src={`./yan/yb2.jpg`}  className="backimg"/>
-                    <div className="beijing"> 
+                    <div style={{position:'fixed',bottom:'0%',width:'90%',left:'5%',opacity:'0.8',height:'35%',backgroundColor:'white',
+                    borderTopLeftRadius:'10px',borderTopRightRadius:'10px'}}> 
                         <div style={{textAlign:'center',paddingTop:'10%',fontSize:'18px'}}>aaa</div>
                         <Link to='/mine/tourist'><p style={{textAlign:'center',paddingTop:'0%',fontSize:'20px',color:'black'}}>我的收藏</p></Link>
                         <Link to='/mine/account'><p style={{textAlign:'center',paddingTop:'0%',fontSize:'20px',color:'black'}}>编辑资料</p></Link>

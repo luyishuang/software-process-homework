@@ -1,0 +1,47 @@
+/* wode */
+.minetitle{
+    background-color: black;
+    height:40px;
+    font-size: 19px;
+    color:white;
+    text-align: center;
+}
+.backimg{
+    background-size:100%;
+    object-fit: fill;
+    height:100%;
+    width:100%;
+    overflow: hidden; 
+    background-size:cover;
+    position:fixed;
+    z-index:-1;
+}
+/* Account */
+
+
+
+.acchead{
+    background-color:paleturquoise;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    padding-top:4%;
+    overflow: hidden;
+    font-size: 19px;
+}
+.accbody{
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* background-color: white; */
+}
+.accbody p{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.accbody input{
+    border:1px solid rgb(32, 226, 145);
+    background-color: white;
+    width:80%;
+    height:25px;
+    margin-left: 10%;
+}
