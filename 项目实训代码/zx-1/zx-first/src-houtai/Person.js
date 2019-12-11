@@ -46,8 +46,8 @@ export default class Person extends Component {
                    <span>
                        管理员信息管理
                     </span> 
-                    <input name='keyword' placeholder='请输入想查找的人员姓名' type='search' />
-                    <button></button>
+                    {/* <input name='keyword' placeholder='请输入想查找的人员姓名' type='search' />
+                    <button></button> */}
                 </div> 
                 <div className='psmiddle'>
                     <input type='checkbox'  />
@@ -55,7 +55,7 @@ export default class Person extends Component {
                     <span>性别</span>
                     <span>电话</span>
                     <span>邮箱</span>
-                    <span>编辑</span>
+                    <span>操作</span>
                 </div>
                 <div className='psdown'>    
                 {
@@ -67,7 +67,7 @@ export default class Person extends Component {
                             <span>{item.tel}</span>
                             <span>{item.mail}</span>
                             <span>
-                                <button>查看</button>
+                                <button>编辑</button>
                                 <button onClick={()=>this.delItem(idx,item.busername)} >删除</button>
                             </span>
                         </li>)

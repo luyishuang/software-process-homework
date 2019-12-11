@@ -68,9 +68,9 @@ body{
 }
 .con button{
     font-size:20px;
-    width:150px;
-    height:50px;
-    margin:50px 60px 30px 50px;
+    width:252px;
+    height:40px;
+    margin:50px 50px 30px 100px;
     background-color:rgba(6, 190, 6, 0.5);
     color:white;
     border:0;
@@ -90,7 +90,7 @@ body{
     padding-top: 32px;
     padding-bottom:32px;
     font-size: 20px;
-    border-bottom: 1px dotted black;
+    /* border-bottom: 1px dotted black; */
 }
 .left a{
     margin:0px 80px;
@@ -106,7 +106,7 @@ body{
     width: 870px;
 }
 .syout{
-    height: 635px;
+    /* height: 635px; */
 }
 .syout p{
     margin-left: 20px;
@@ -131,6 +131,7 @@ body{
     text-align: center;
     margin-top: 30px;
     display:block;
+    margin-bottom: 50px;
 }
 .syin p{
     margin-left: -10px;

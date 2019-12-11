@@ -40,7 +40,7 @@ export default function Login(){
                       </p>
                       <p className='con'>
                         <button onClick={toHome}>登陆</button>
-                        <button >注册</button>
+                        {/* <button >注册</button> */}
                         {/* onClick={toJoin} */}
                       </p>
                     </div>

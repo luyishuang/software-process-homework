@@ -34,8 +34,6 @@ export default function Join(){
       history.push('/');
 
     }
-    
-
         return (
             <div className='bg'>
                  <div className='top'>
