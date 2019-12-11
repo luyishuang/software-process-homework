@@ -1,11 +1,15 @@
-import React ,{Component } from 'react'
+import React ,{Component } from 'react';
+import store from '../store';
+import {tolike,todislike} from '../actions/index';
+
 export default class Taihe extends Component{
     constructor(){
         super();
         this.state={
             data:'',
-            likeinitial:['images/icon/xihuan2.png','images/icon/xihuan.png'],
-            likeflag:'dislike'
+            likeflag:'',
+            musicpath:'images/music/bj1.mp3',
+            isPlay:false
         }
     }
     componentDidMount(){
@@ -16,21 +20,46 @@ export default class Taihe extends Component{
         //         data:res.jdcontent
         //     })
         // })
+        fetch('/addlike',{
+            method:'POST',
+            mode : 'cors',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `username=&bpwd=12`
+
+        })
+        // this.changelike=store.subscribe(()=>{
+        //     this.setState({
+        //         likeflag:store.getState().changelike
+        //     })
+        //     console.log(this.state.likeflag);
+        // })
     }
+    // componentWillUnmount(){
+    //     this.changelike();
+    // }
+    
     goback=()=>{
         window.history.back(-1)
     }
     addlike=()=>{
-        if(this.state.likeflag === 'dislike'){
-            this.setState({
+        // if(this.state.likeflag === 'dislike'){
+        //     this.setState({
 
-                    likeflag:'like'
+        //             likeflag:'like'
                 
-            })
+        //     })
+        // }else{
+        //     this.setState({
+        //             likeflag:'dislike'
+        //     })
+        // }
+        if(this.state.likeflag === 'dislike'){
+            store.dispatch(tolike('like'));
+            
         }else{
-            this.setState({
-                    likeflag:'dislike'
-            })
+            store.dispatch(todislike('dislike'));
         }
         console.log(this.state.likeflag,this.state.likeinitial);
         
@@ -41,18 +70,27 @@ export default class Taihe extends Component{
         return(
             <div>
                 <div className='gghead'>
-                    <span style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} onClick={()=>this.goback()}>&lt;</span>
+                    {/* <span style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} onClick={()=>this.goback()}>&lt;</span> */}
+                    <span style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} onClick={()=>this.goback()}><img style={{width:'20px',lineHeight:'20px'}} src={require('../images/icon/fanhui.png')}/></span>
+
                     <span style={{marginTop:'5%'}}>{placename}</span>
                     <span flage={this.state.likeflag} onClick={this.addlike} style={{width:'22px'}}>
                         <img className={this.state.likeflag == 'like'?'lhidden':'lshow'} style={{width:'22px',lineHeight:'20px',position:'fixed',right:'3%',top:'2%'}} src='../images/icon/xihuan2.png'/>
                         <img className={this.state.likeflag == 'like'?'lshow':'lhidden'}  style={{width:'26px',lineHeight:'26px',position:'fixed',right:'3%',top:'2%'}} src='../images/icon/xihuan.png'/>
                     </span>
                 </div>
+                
                 <div className='thimg'>
                     <img src='../images/dtaihe1.png' className='thimgimg'/>
                     <img src='../images/dtaihe2.png' className='thimgimg'/>
                     <div dangerouslySetInnerHTML={{__html:this.state.data}}></div>
+                    <div className='lspeak'>
+                    <audio  controls  style={{width:'100%',backgroundColor:'teal'}}>
+                        <source src={'../'+this.state.musicpath} style={{backgroundColor:'teal'}}/>
+                    </audio>
                 </div>
+                </div>
+                
             </div>
         )
     }
