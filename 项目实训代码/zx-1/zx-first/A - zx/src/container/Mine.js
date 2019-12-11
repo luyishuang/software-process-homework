@@ -5,7 +5,7 @@ export default class Mine extends Component{
     render(){
         return(
             <div>
-                <div  className='minetitle'>
+                {/* <div  className='minetitle'>
                     <div className='mineleft'>
                         <img src={require('../images/dtouxiang1.png')}/>
                     </div>
@@ -33,7 +33,16 @@ export default class Mine extends Component{
                         <p>反馈</p>
                     </div>
                 </div>
-                <Button className='btn'> <span>退出登录</span> </Button>
+                <Button className='btn'> <span>退出登录</span> </Button> */}
+                <div  className='minetitle'>
+                    <span style={{lineHeight:'40px'}}>我的主页</span>
+                </div>
+                <div>
+                    <img src={`./yan/yb1.jpg`}  className="backimg"/>
+                    <div className="y1">   
+                    </div>
+                    <img src={`./yan/ytx.png`} className='y2'/>
+                </div>
             </div>
         )
     }

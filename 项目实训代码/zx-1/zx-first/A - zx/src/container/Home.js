@@ -13,55 +13,50 @@ export default class Home extends Component{
                 {/* <form name="search" className="searchbar" id="search" action="">
                     <input type="search" name="find" id="find" placeholder=' 请输入目的地'className='searchinput'/>
                 </form> */}
-                <view className="search-wrapper">
-                    <form className="search-input-wrapper ">
+                <form name="search" className="searchbar" id="search" action="">
                     <input type="search" name="find" id="find" placeholder=' 请输入目的地'className='searchinput'/>
-                    </form>
-                </view>
+                </form>
+                <div style={{marginTop:'18%'}}></div>
                 <Carousel autoplay
                     autoplayInterval={2000}
                     infinite
                     slideHeight={0.5}
-                    style={{marginTop:'64px'}}>
+                    style={{marginTop:'10%'}}>
                     <img src={require('../images/dxian.jpg')} alt=""/>
                     <img src={require('../images/dchangbai.png')} alt=""/>
                     <img src={require('../images/dyiheyuan.png')} alt=""/>
                     <img src={require('../images/dzhangjiajie.png')} alt=""/>
 
                 </Carousel>
+                <div className="homebcc">
+                    
                 <Link to ='/home/game'>
-                <div className="push">
-                    <div className='holeft' >
-                        <p>故宫大冒险：</p>
-                        <p>让你在游戏中了解故宫</p>
-                        <p style={{fontSize:'16px',color:"blue"}}> 点击这里开始冒险吧！</p>
-                        
+                    <div className="maoxian">
+                        <div className='inner'>
+                            <p>故宫大冒险：</p>
+                            <p>让你在游戏中了解故宫</p>
+                        </div>
                     </div>
-                    <img src={require('../images/dye.png')} alt='' className='horight' />
-                </div>
                 </Link>
+                <div style={{width:'100%'}}>
+                    <p style={{width:'95%',float:'left',marginLeft:'3%',fontSize:'26px',}}>文章推送<a style={{float:'right',fontSize:'16px',color:'#259B24'}} href='/home/Tuisong'>查看更多>></a></p>
+                </div>
                 <Link to='/home/zuixiao'>
                 <div className="push">
                     <div className='holeft'>
-                        <p>故宫的大怪兽：</p>
-                        <p>不为人所知的另一面</p>
-                        <p style={{fontSize:'16px',color:"gray",marginLeft:'7%'}}>2019/10/24</p>
-                        <p style={{fontSize:'16px',color:"gray",marginLeft:'7%'}}>作者：王睿</p>
+                        <p>故宫的大怪兽：不一样的文化介绍</p>
                     </div>
-                    <img src={require('../images/dguaishou1.png')} alt='' className='horight'/>
+                    <img src={require('../images/dguaishou2.png')} alt='' className='horight'/>
                 </div>
                 </Link>
-                <Link>
                 <div className="push">
                     <div className='holeft'>
-                        <p>老北京的传说：</p>
-                        <p>太和殿的龙没法儿数</p>
-                        <p style={{fontSize:'16px',color:"gray",marginLeft:'7%'}}>2019/11/11</p>
-                        <p style={{fontSize:'16px',color:"gray",marginLeft:'7%'}}>作者：杨晓凡</p>
+                        <p>老北京的传说：太和殿的龙没法儿数</p>
                     </div>
-                    <img src={require('../images/dthlong2.png')} alt='' className='horight'/>
+                    <img src={require('../images/dthlong3.png')} alt='' className='horight'/>
                 </div>
-                </Link>
+            </div>
+            
             </div>
             
         )
