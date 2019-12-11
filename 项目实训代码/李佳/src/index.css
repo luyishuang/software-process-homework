@@ -1,0 +1,734 @@
+.search-wrapper {
+    position: fixed;/*悬停搜索框的关键样式*/
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    background-color: #259b24;
+    padding-top: 1%;
+   } 
+   .search-input-wrapper {
+    flex: 8;
+    padding: 5px;
+    height: 60px;
+    background-color: #259b24;
+    border-radius: 3px;
+   }
+     
+    
+     
+  
+
+
+/* 标签页
+.tab{
+    position:fixed;
+    background-color: #fff;
+    border:1px solid gray;
+    width: 100%;
+    height:10%;
+    overflow: hidden;
+    
+}
+.tab header{ 
+    min-height: 100%;
+}
+.tab header a{
+    margin-left: 12%;
+    width: 5%;
+} */
+
+
+
+/* 登录页面 */
+.login{
+
+    margin: 10px;
+    text-align: center;
+}
+.login p{
+    margin-top: 10%;
+    font-size: 18px;
+    color: #259B24;
+}
+.input{
+    border :1px solid gray;
+    margin:5% 20px;
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+}
+.forget{
+    color: #259B24;
+    margin:10% 10%;
+    float: left;
+    justify-content: ' flex-start';
+}
+.quickly{
+    color: #259B24;
+    margin:10% 10%;
+    float: right;
+    justify-content: ' flex-end';
+}
+.quicklogin{
+    width: 80%;
+    color: white;
+    margin: 10% 10%;
+}
+.quicklogin a{
+    color: white;
+    font-size: 22px;
+}
+.third{
+    justify-content: 'space-around';
+    padding-top:10%
+}
+.third img{
+    width: 16%;
+    height: 16%;
+    margin: 1% 5%;
+}
+.third span{
+    margin:0 8%;
+    font-size: 18px;
+}
+/*注册页面*/
+.register{
+    text-align: center;
+}
+.register p{
+    margin-top: 10%;
+    font-size: 18px;
+    color: #259B24;
+}
+.xieyi{
+    margin-top: 6%;
+    font-size: 20px;
+}
+.tologin{
+    color: #259B24;
+    margin:10% 10%;
+}
+
+
+
+
+
+
+/*首页*/
+.push{
+    background-color: white;
+    border: 0px solid gray;
+    box-shadow:3px 3px 3px 1px hsla(0, 0%, 81%, 0.85);
+    margin: 5%;
+    width: auto;
+    margin-top: 4%;
+    overflow: hidden;
+    padding: 2%;
+    height: 40%;
+
+}
+.holeft{
+    float: left;
+    width: auto;
+    height: 40%;
+    font-size: 20px;
+    line-height: 70%;
+}
+.horight{
+    float: right;
+    width:40%;
+    height: 30%;
+    margin-top: 2%;
+    overflow: hidden;
+}
+/* 首页——游戏 */
+.gameth{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding:3% 0;
+    background-color: white;
+    border: 1px solid gray;
+}
+.gmimg{
+    background-image: url(./images/jishou.jpg);
+    background-size: auto;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%; 
+}
+.gmimgp{
+    margin-top:50%;
+    color: white;
+    font-size: 18px;
+    margin-left: 10%;
+}
+.gmimg2{
+    background-image: url(./images/dqvshui.png);
+    background-size: auto;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%; 
+}
+
+
+
+/* 目的地*/
+.searchbar{
+    height: 30%;
+    background-color: #259B24;
+    padding:2% 3%;
+    width: 100%;
+}
+
+/* .button{
+    float: left;
+    width:auto;
+    height: 80%;
+    position: absolute;
+    margin-left: 81%;
+    background-color: #fff;
+    border:1px solid gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+.searchinput{
+    /* font-size: 24px;
+    padding-left: 5%;
+    border:1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    width: 90%;
+    height: 80%;
+    margin-left: 3%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 1%;
+    background-image: url('./images/dsearch.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.dest{
+    margin: 5% 5%;
+}
+/*全国热门城市 */
+.inner{
+    background: rgba(0,0,0,0.3);
+    
+    overflow: hidden;
+}
+.hot{
+    background-image:url('./images/dtaofu4.jpg' ) ;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:29%;
+    height:28%;
+    justify-content: 'space-round';
+    float: left;
+    margin:2%;
+}
+.hot p{
+    color:white;
+    padding: 35% 0;
+    float: bottom;
+    font-size: 18px;
+}
+.hot2{
+    background-image:url('./images/dhanfu.png' ) ;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:29%;
+    height:28%;
+    justify-content: 'space-round';
+    float: left;
+    margin:2%;
+
+}
+.hot2 p{
+    color:white;
+    padding: 35% 0;
+    float: bottom;
+    font-size: 18px;
+}
+.hot3{
+    background-image:url('./images/dfu.png' ) ;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:29%;
+    height:28%;
+    justify-content: 'space-round';
+    float: left;
+    margin:2%;
+}
+.hot3 p{
+    color:white;
+    padding: 35% 0;
+    float: bottom;
+    font-size: 18px;
+}
+/* 城市 */
+.country{
+    margin-top: 10%;
+    padding-top: 10%;
+}
+.countryp2{
+    margin-top: 100px;
+    font-size: 24px;
+}
+.city{
+    background-image: url(./images/dgugong.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.cityp{
+    font-size: 14px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    color:white;
+    text-align: center;
+    float: bottom;
+}
+.city2{
+    background-image: url(./images//dtiantan.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+
+.city3{
+    background-image: url(./images/dtiananmen.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+
+.city4{
+    background-image: url(./images/dyiheyuan.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city5{
+    background-image: url(./images/dhukou.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city6{
+    background-image: url(./images/dhuaqing.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city7{
+    background-image: url(./images/dnanniwan.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city8{
+    background-image: url(./images/dshihuang.png);
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+/* 故宫 */
+.gghead{
+    background-color: #259B24;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    padding-top:4%;
+    overflow: hidden;
+}
+.gghead span{
+    color: white;
+    font-size: 20px;
+}
+.ggbar{
+    height: 40%;
+    width: 100%;
+}
+.gginput{
+    width: 100%;
+    height: 90%;
+    font-size: 18px;
+    padding: 3%;
+    background-image: url('./images/dsearch.png');
+    background-repeat: no-repeat;
+    background-position: 93% 50%;
+}
+.ggsmall{
+    box-shadow:1px 1px 1px 1px hsla(0, 0%, 81%, 0.85);
+    height: 30%;
+    width: 90%;
+    margin: 5% 3%;
+    padding:2% 2% ;
+    background-color: white;
+    border:1px;
+    overflow: hidden;
+}
+.ggleft{
+    
+    float: left;
+    width: 30%;
+    height: 50%;
+    padding-left: 1%;
+    padding-top: 3%;
+}
+.ggimg{
+    width: 100%;
+    height: 80%;
+}
+.ggright{
+    float: left;
+    width:65%;
+    padding-left: 2%;
+    word-wrap: break-word;
+}
+.ggright p{
+    font-size: 16px;
+    color: black;
+}
+.ggritop{
+    height: 85px;
+}
+.ggbotimg{
+    width: 20px;
+}
+.ggbottou{
+    float: right;
+    width: 20px;
+}
+/* 目的地——故宫——太和殿 */
+.thimg{
+    background-color: #fff;
+    width: 100%;
+    height: 40%;
+}
+.thimgimg{
+    height: 100px;
+    width: 180px;
+    margin: 5% 0;
+    margin-left: 4%;
+}
+
+
+
+
+
+
+
+/* 李佳从这里开始改 */
+
+/* 社区 */
+.lout{
+    background-color: #fffbfa;
+    background: url('./images/ljbg13.jpg') ;
+    background-attachment :fixed;
+    height: 100%;
+}
+.title{
+    background-color: rgb(204, 174, 238);
+    text-align:'center';
+    overflow: hidden;
+    padding:2% 5%;
+    position: fixed;
+    z-index:999;
+    top:0;
+    width: 100%;    
+}
+/* 话题 */
+.topic{
+    border: 1px dotted gray;
+    border-radius: 10px;
+    margin: 4% 2%;
+    width: auto;
+    overflow: hidden;
+    color: black;
+}
+.cotop img{
+    float: left;
+    width: 12%;
+    margin-left: 8%;
+    margin-top: 5%;
+    border-radius: 100%;
+    border: 0.5px solid grey;
+}
+.cotop button{
+    float: left;
+    background: url('./images/ljt1.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    margin-top: 8%;
+    margin-left: 40%;
+}
+.coname{
+    float: left;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-top: 9%;
+    line-height: 10%;
+    font-size: 18px;
+}
+.cotime{
+    float: left;
+    margin-left:-9%;
+    padding-top: 14%;
+    font-size: 12px;
+}
+.codown{
+    padding:16% 3% 0 5%;
+}
+.codown p{
+    font-size: 16px;
+    text-indent: 20px;
+    line-height: 27px;
+}
+/* 发表 */
+.toout{
+    background: url('./images/ljbg15.jpg') no-repeat;
+    padding-bottom:34%;
+}
+.topictitle{
+    justify-content: space-between;
+    padding-top: 5%;
+}
+.topictitle span{
+    margin-left: 25%;
+}
+.topictitle a{
+    font-size:18px;
+}
+.a1{
+    margin-left:10%;
+}
+.a2{
+    margin-left: 20%;
+}
+.tobody{
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    margin: 0 5%;
+    margin-top: 3%;
+    overflow: hidden;
+    padding: 0 2%;
+    height: 40%;
+}
+.tobody img{
+    width: 55%;
+    height: 55%;
+    border-radius: 100%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+.tobody span{
+    font-size: 20px;
+}
+.tobody input{
+    /* background: url('./images/ljcarema.png'); */
+    margin-top: 5%;
+}
+.tobodyy{
+    border-left: 1px solid grey;
+    border-right: 2px solid grey;
+    border-bottom: 1px solid grey;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin: 0 5%;
+    overflow: hidden;
+    background: #fffbfa83;
+}
+.tobodyy textarea{
+    background: #fffbfa1c;
+}
+/* 详情 */
+.dtitle{
+    background-color: rgb(204, 174, 238);
+    overflow: hidden;
+    padding:2% 5%;
+    position: fixed;
+    z-index:999;
+    top:0;
+    width: 100%; 
+    height: 6%;
+    font-size:22px;
+    color:white ;
+}
+.dtitles2{
+    float: left;
+    font-size: 22px;
+    margin-left: 35%;
+    padding-top: 5%;
+    margin-top:-1%;
+}
+.dtitles1{
+    float: left;
+    margin-top: 3%;
+}
+
+/* 我的 */
+.minetitle{
+    border: 2px solid gray;
+    background-color: #259B24;
+    border-bottom-left-radius:30%;
+    border-bottom-right-radius:30%;
+    overflow: hidden;
+    padding: 2% ;
+}
+.mineleft{
+    float: left;
+    width: 40%;
+    text-align: center;
+    
+}
+.mineleft img{
+    text-align: center;
+    width: 60%;
+    margin:15% 5%;
+    border :1px solid white;
+    border-radius: 100%;
+}
+.mineright{
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding: 5% 5%;
+}
+.mineright p{
+    font-size: 24px;
+    color:white;
+}
+.mineright img{
+    width: 15%;
+    height: auto;
+    text-align: center;
+    margin: 0 10%;
+}
+.minebody{
+    width: 100%;    
+    background-color: #fff;
+    height: 20%;
+    margin: 5% 0;
+    color: black;
+}
+.minebody p{
+    font-size: 22px;
+    padding:5% 0% 0 10%;
+}
+.minebody1{
+    width: 100%;    
+    background-color: #fff;
+    padding: 1% 0;
+    margin: 5% 0;
+    
+}
+.minebody1 p{
+    font-size: 22px;
+    margin-left: 10%;
+}
+.minebody1 hr{
+    margin: 0 10%;
+}
+.btn{
+    
+    text-align: left;
+    margin: 10% 10%;
+    padding: 20% 10%;
+    border :1px solid red;
+}
+.btn span{
+    color: red;
+    font-size: 26px;
+    margin: 10% 10%;
+}
+/* 游玩记录 */
+.todiv{
+    width: 90%;
+    height: 40%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.minepp{
+    margin-top: 30%;
+}
+/* 我的——账号与安全 */
+.acchead{
+    text-align: center;
+}
+.accimg
+{
+    height: 20%;
+    width: 20%;
+    margin-top: 5%;
+    border-radius: 100%;
+}
+.accbody{
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 1% 0;
+    background-color: #fff;
+}
+.accbody p{
+    margin-left: 3%;
+    font-size: 16px;
+    background-color: white;
+}
+.accbody span{
+    margin-left: 20%;
+}
+.accbody input{
+    border :0 ;
+}
+
