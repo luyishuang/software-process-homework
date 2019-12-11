@@ -31,29 +31,17 @@ class Login extends React.Component {
     }
 
     getConnect(){  //api请求函数
-        let text = {username:this.state.username,pwd:this.state.password} //获取数据
-        let send = JSON.stringify(text);   //重要！将对象转换成json字符串
+        // let text = {username:this.state.username,password:this.state.password} //获取数据
+        // let send = JSON.stringify(text);   //重要！将对象转换成json字符串
         // fetch(`http://127.0.0.1:8081/password`,{   //Fetch方法
-        fetch('/login/add',{   //Fetch方法
-            method: 'POST',
-            headers: {'Content-Type': 'application/json; charset=utf-8'},
-            body: send
-        }).then(res => res.json())
-        .then(res=>{
-            console.log(res);
-            if(res.message==='success') {
-                alert('登录成功');
-                this.props.history.push('/tab');
-            }
-            else window.alert('验证失败，用户名或密码错误')
-                    
-                
-        })
-        // then(
+        //     method: 'POST',
+        //     headers: {'Content-Type': 'application/json; charset=utf-8'},
+        //     body: send
+        // }).then(res => res.json()).then(
         //     data => {
-        //         if(data登录成功) {
+        //         if(data.success) {
         //             alert('登录成功');
-        //             this.props.history.push('/tab');
+                    this.props.history.push('/tab');
         //         }
         //         else window.alert('验证失败，用户名或密码错误')
         //     }

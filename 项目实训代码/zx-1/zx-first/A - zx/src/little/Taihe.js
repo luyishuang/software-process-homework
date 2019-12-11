@@ -22,8 +22,10 @@ export default class Taihe extends Component{
         return(
             <div>
                 <div className='gghead'>
-                    <span style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} onClick={()=>this.goback()}>&lt;</span>
-                     <span style={{marginTop:'5%'}}>太和殿</span>
+                    <span style={{float:'left',marginLeft:'3%',marginBottom:'1%',fontSize:'28px'}} onClick={this.goback()}>
+                        <img src={require('../images/dfanhui2.png')}/>
+                    </span>
+                    <span style={{marginTop:'5%'}}>太和殿</span>
                 </div>
                 <div className='thimg'>
                     <img src={require('../images/dtaihe1.png')} className='thimgimg'/>

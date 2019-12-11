@@ -6,15 +6,15 @@ export default class Taihe extends Component{
             data:''
         }
     }
-    componentDidMount(){
-        fetch('/article/?artid=1')
-        .then(res=>res.json())
-        .then(res=>{
-            this.setState({
-                data:res.content
-            })
-        })
-    }
+    // componentDidMount(){
+    //     fetch('/article/?artid=1')
+    //     .then(res=>res.json())
+    //     .then(res=>{
+    //         this.setState({
+    //             data:res.content
+    //         })
+    //     })
+    // }
     goback=()=>{
         window.history.back(-1)
     }

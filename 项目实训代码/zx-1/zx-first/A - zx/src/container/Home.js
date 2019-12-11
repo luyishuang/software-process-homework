@@ -53,7 +53,7 @@ export default class Home extends Component{
                     <div className='holeft'>
                         <p>老北京的传说：太和殿的龙没法儿数</p>
                     </div>
-                    <img src={require('../images/dthlong3.png')} alt='' className='horight'/>
+                    <img src={require('../images/dguaishou3.png')} alt='' className='horight'/>
                 </div>
             </div>
             

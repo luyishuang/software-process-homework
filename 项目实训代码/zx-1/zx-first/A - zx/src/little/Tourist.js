@@ -1,14 +1,13 @@
 import React,{Component} from 'react'
 
 export default class Tourist extends Component{
-    goback=()=>{
-        window.history.back(-1)
-    }
     render(){
         return(
             <div>
                 <div className='gghead'>
-                    <span style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} onClick={()=>this.goback()}>&lt;</span>
+                    <a style={{float:'left',marginLeft:'3%',marginBottom:'1%',fontSize:'28px'}} href='/#/tab'>
+                        <img src={require('../images/dfanhui2.png')}/>
+                    </a>
                      <span style={{marginTop:'5%'}}>游玩记录</span>
                 </div>
                 <div className='todiv'>

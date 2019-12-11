@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Login from './Login'
 import Join from './Join'
 import Tab from "./Tab"
@@ -25,7 +25,6 @@ class App extends React.Component {
         <Route path='/community/topic' component={Topic}/>
         <Route path='/destination/gugong' component={Gugong}/>
         <Route path='/destination/gugong1/taihe' component={Taihe}/>
-        <Route path='/home/game' component={Game}/>
         <Route path='/mine/tourist' component={Tourist}/>
         <Route path='/mine/account' component={Account}/>
         <Route path='/home/zuixiao' component={Zuixiao}/>

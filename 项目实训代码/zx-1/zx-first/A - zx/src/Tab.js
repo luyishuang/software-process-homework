@@ -9,7 +9,7 @@ export default class AppTab extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'home',
+      selectedTab: 'mine',
     };
   }
   render() {
@@ -17,7 +17,7 @@ export default class AppTab extends React.Component {
       <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0 }}>
         <TabBar
           unselectedTintColor="#949494"
-          tintColor="#259B24"
+          tintColor="#2f2f4f"
           barTintColor="white"
         >
           <TabBar.Item
@@ -32,7 +32,7 @@ export default class AppTab extends React.Component {
               selectedIcon={<div style={{
                   width: '22px',
                   height: '22px',
-                  background: "url(" + require("./images/dhome2.png") + ") center center /  21px 21px no-repeat" }}
+                  background: "url(" + require("./images/dhome3.png") + ") center center /  21px 21px no-repeat" }}
               />}
             selected={this.state.selectedTab === 'home'}
             onPress={() => {
@@ -54,7 +54,7 @@ export default class AppTab extends React.Component {
               selectedIcon={<div style={{
                   width: '22px',
                   height: '22px',
-                  background: "url(" + require("./images/ddest2.png") + ") center center /  21px 21px no-repeat" }}
+                  background: "url(" + require("./images/ddest3.png") + ") center center /  21px 21px no-repeat" }}
                 />
                 }
             selected={this.state.selectedTab === 'destination'}
@@ -76,7 +76,7 @@ export default class AppTab extends React.Component {
               selectedIcon={<div style={{
                   width: '22px',
                   height: '22px',
-                  background: "url(" + require("./images/dagency2.png") + ") center center /  21px 21px no-repeat"}}
+                  background: "url(" + require("./images/dagency3.png") + ") center center /  21px 21px no-repeat"}}
                 />
                 }
             selected={this.state.selectedTab === 'community'}
@@ -98,7 +98,7 @@ export default class AppTab extends React.Component {
               selectedIcon={<div style={{
                   width: '22px',
                   height: '22px',
-                  background: "url(" + require("./images/dmine2.png") + ") center center /  21px 21px no-repeat" }}
+                  background: "url(" + require("./images/dmine3.png") + ") center center /  21px 21px no-repeat" }}
                 />}
             selected={this.state.selectedTab === 'mine'}
             onPress={() => {

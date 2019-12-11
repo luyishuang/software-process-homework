@@ -4,11 +4,11 @@ export default class Game extends React.Component{
     render(){
         return(
             <div>
-                <div className='gghead'>
-                    <a style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} href='/tab'>
-                    <img src={require('../images/dfanhui2.png')} className="fanhui"/>
+                <div className='gghead2'>
+                    <a style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} href='/#/tab'>
+                        <img src={require('../images/dfanhui2.png')} className="fanhui"/>
                     </a>
-                     <span style={{marginLeft:'30%',float:'left'}}>故宫大冒险</span>
+                    <span>故宫大冒险</span>
                 </div>
                 <div style={{marginTop:'20%'}}></div>
                 <div className='gameth'>
