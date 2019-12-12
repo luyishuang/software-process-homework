@@ -1,0 +1,834 @@
+
+ul,li{
+    list-style: none;
+}
+/* 登录页面 */
+.login{
+
+    margin: 10px;
+    text-align: center;
+}
+.login p{
+    margin-top: 10%;
+    font-size: 18px;
+    color: #259B24;
+}
+.input{
+    border :1px solid gray;
+    margin:5% 20px;
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+}
+.forget{
+    color: #259B24;
+    margin:10% 10%;
+    float: left;
+    justify-content: ' flex-start';
+}
+.quickly{
+    color: #259B24;
+    margin:10% 10%;
+    float: right;
+    justify-content: ' flex-end';
+}
+.quicklogin{
+    width: 80%;
+    color: white;
+    margin: 10% 10%;
+}
+.quicklogin a{
+    color: white;
+    font-size: 22px;
+}
+.third{
+    justify-content: 'space-around';
+    padding-top:10%
+}
+.third img{
+    width: 16%;
+    height: 16%;
+    margin: 1% 5%;
+}
+.third span{
+    margin:0 8%;
+    font-size: 18px;
+}
+/*注册页面*/
+.register{
+    text-align: center;
+}
+.register p{
+    margin-top: 10%;
+    font-size: 18px;
+    color: #259B24;
+}
+.xieyi{
+    margin-top: 6%;
+    font-size: 20px;
+}
+.tologin{
+    color: #259B24;
+    margin:10% 10%;
+}
+
+
+
+
+
+
+/*首页*/
+.search-input-wrapper {
+    position: fixed;/*悬停搜索框的关键样式*/
+    top: 0px;
+    z-index: 99;
+    padding: 0 3% 3% 3%;
+    height: 60px;
+    background-image: url(./images/p5.png) ;
+    background-color: #fff;
+    background-size: 100% 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+.searchinput{
+    margin-top: 3%;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 1%;
+    background-image: url('./images/dsearch.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.homebcc{
+    background-image: url(./images/homebcc2.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding-bottom: 5%;
+    background-attachment :fixed;
+
+
+}
+.maoxian{
+    background-image: url('./images/dmaoxian.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:4% 3% 0 3%;
+    border: 3px solid rgb(66, 5, 5);
+    padding: 20% 2% 2% 2%; 
+}
+.maoxian p{
+    color:white;
+    margin-left: 5%;
+    font-size: 18px;
+}
+/* 首页——文章推送 */
+.tuisong{
+    margin-top: 24%;
+    background-image: url(./images/p1.jpg);
+    background-size: 100%;
+}
+.push{
+    background-color: white;
+    border: 0px solid gray;
+    box-shadow:3px 3px 3px 1px hsla(0, 0%, 81%, 0.85);
+    margin: 5%;
+    width: auto;
+    margin-top: 4%;
+    overflow: hidden;
+    padding: 2%;
+    height: 40%;
+    color: #000;
+
+}
+.holeft{
+    float: left;
+    width: 55%;
+    height: 40%;
+    font-size: 23px;
+    line-height: 130%;
+    margin-left: 5%;
+    word-wrap: break-word;
+
+}
+.horight{
+    float: right;
+    width:40%;
+    height: 30%;
+    margin-top: 2%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* 首页——游戏 */
+.gameth{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding:3% 0;
+    background-color: white;
+    border: 1px solid gray;
+    color: #000;
+}
+.gmimg{
+    background-image: url(./images/jishou.jpg);
+    background-size: auto;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%; 
+}
+.gmimgp{
+    margin-top:50%;
+    color: white;
+    font-size: 18px;
+    margin-left: 10%;
+}
+.gmimg2{
+    background-image: url(./images/dqvshui.png);
+    background-size: auto;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%; 
+}
+
+
+
+/* 目的地*/
+.searchbar{
+    height: 9%;
+    /* background-color: #259B24; */
+    background: url('/images/lbg5.jpg') no-repeat;
+    background-size: cover;
+    padding:3% 3%;
+    width: 100%;
+    color:wheat;
+    position: fixed;
+    z-index:999;
+    top:0;
+}
+/* .am-picker-col-mask{
+    background-size: 50% 102px;
+}
+.am-picker-col-indicator{
+    width:50%;
+}
+.am-picker-col-item{
+    
+    text-align: right;
+} */
+/* .button{
+    float: left;
+    width:auto;
+    height: 80%;
+    position: absolute;
+    margin-left: 81%;
+    background-color: #fff;
+    border:1px solid gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+.searchinput{
+    /* font-size: 24px;
+    padding-left: 5%;
+    border:1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    width: 60%;
+    height: 80%;
+    margin-left: 3%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 1%;
+    background-image: url('./images/dsearch.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.ldestination{
+    /* height: 1000px; */
+    /* margin: 5% 5%; */
+    height: 840px;
+    width: 100%;
+    background-image: url('/images/dlbg.gif');
+    background-repeat: repeat-y;
+    background-attachment :fixed;
+    background-size: cover;
+}
+.dest{
+    background-size: 100%;
+    background-image: url('./images/ddfs.png');
+}
+
+
+/*全国热门城市 */
+.inner{
+    background: rgba(0,0,0,0.3);
+    
+    overflow: hidden;
+}
+.hot{
+    /* background-image:url('./images/dtaofu4.jpg' ) ; */
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:29%;
+    height:28%;
+    justify-content: 'space-round';
+    float: left;
+    margin:2%;
+}
+.hot p{
+    color:white;
+    padding: 35% 0;
+    float: bottom;
+    font-size: 18px;
+}
+.hot2{
+    background-image:url('./images/dhanfu.png' )  ;
+    border-radius: 3px;
+    background-size: 100%;
+    width:29%;
+    height:28%;
+    justify-content: 'space-round';
+    float: left;
+    margin:2%;
+
+}
+.hot2 p{
+    color:white;
+    padding: 35% 0;
+    float: bottom;
+    font-size: 18px;
+}
+.hot3{
+    background-image:url('./images/dfuzi.png' ) ;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:29%;
+    height:28%;
+    justify-content: 'space-round';
+    float: left;
+    margin:2%;
+}
+.hot3 p{
+    color:white;
+    padding: 35% 0;
+    float: bottom;
+    font-size: 18px;
+}
+/* 城市 */
+/* .country{
+    margin-top: 10%;
+    padding-top: 10%;
+} */
+.countryp2{
+    /* margin-top: 100px; */
+    font-size: 24px;
+}
+.city{
+    background-image: url('./images/dgugong.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.cityp{
+    font-size: 14px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    color:white;
+    text-align: center;
+    float: bottom;
+}
+.city2{
+    background-image: url('./images//dtiantan.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+
+.city3{
+    background-image: url('./images/dtiananmen.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+
+.city4{
+    background-image: url('./images/dyiheyuan.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city5{
+    background-image: url('./images/dhukou.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city6{
+    background-image: url('./images/dhuaqing.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city7{
+    background-image: url('./images/dnanniwan.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+.city8{
+    background-image: url('./images/dshihuang.png');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: 100%;
+    width:43%;
+    height: 30%;
+    justify-content: 'space-around';
+    float: left;
+    margin:3% 3%;
+}
+/* 故宫 */
+.gghead{
+    /* background-color: #259B24; */
+    position: fixed;
+    top:0px;
+    text-align: center;
+    /* height: 20%; */
+    width: 100%;
+    padding-top:4%;
+    overflow: hidden;
+    background: url('/images/lbg5.jpg') no-repeat;
+    background-size: cover;
+}
+.gghead span{
+    /* color: white; */
+    font-size: 20px;
+}
+.ggbar{
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    top:7%;
+}
+.gginput{
+    width: 100%;
+    height: 90%;
+    font-size: 18px;
+    padding: 3%;
+    background-image: url('./images/dsearch.png');
+    background-repeat: no-repeat;
+    background-position: 93% 50%;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(9, 197, 25);
+}
+.ggsmall{
+    box-shadow:1px 1px 1px 1px hsla(0, 0%, 81%, 0.85);
+    height: 30%;
+    width: 90%;
+    margin: 5% 3%;
+    padding:2% 2% ;
+    background-color: white;
+    border:1px;
+    overflow: hidden;
+}
+.ggleft{
+    
+    float: left;
+    width: 30%;
+    height: 50%;
+    padding-left: 1%;
+    padding-top: 3%;
+}
+.ggimg{
+    width: 100%;
+    height: 80%;
+}
+.ggright{
+    float: left;
+    width:65%;
+    padding-left: 2%;
+    word-wrap: break-word;
+}
+.ggright p{
+    font-size: 16px;
+    color: black;
+}
+.ggritop{
+    height: 85px;
+}
+.ggbotimg{
+    width: 20px;
+}
+.ggbottou{
+    float: right;
+    width: 20px;
+}
+
+
+.lplace{
+    background-image: url('./images/lbg.jpg');
+}
+.lplacelist{
+    margin-top: 30%;
+}
+
+/* 目的地——故宫——太和殿 */
+.thimg{
+    background-color: #fff;
+    width: 100%;
+    /* height: 40%; */
+    margin-top: 20%;
+}
+.thimgimg{
+    height: 100px;
+    width: 180px;
+    margin: 5% 0;
+    margin-left: 4%;
+}
+
+/* 12-10 */
+.lspeak{
+    width:100%;
+    background-image: url('/images/lbg.jpg');
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
+}
+
+/* 收藏 */
+.lshow{
+    display: block;
+}
+.lhidden{
+    display: none;
+}
+
+
+
+/* 李佳从这里开始改 */
+
+/* 社区 */
+.lout{
+    background: url('./images/lbg113.jpg') ;
+    background-attachment :fixed;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    border :0px solid white;
+    height: auto;
+}
+.title{
+    background-image: url(./images/dsheqv4.jpg);
+    background-size: 100%;
+    width: 100%;
+    /* background-color: rgb(204, 174, 238); */
+    text-align:'center';
+    overflow: hidden;
+    padding:2% 5%;
+    position: fixed;
+    z-index:999;
+    top:0;   
+}
+/* 话题 */
+.topic{
+    border: 1px dotted gray;
+    border-radius: 10px;
+    margin: 4% 2%;
+    width: auto;
+    overflow: hidden;
+    color: black;
+}
+.cotop img{
+    float: left;
+    width: 12%;
+    margin-left: 8%;
+    margin-top: 5%;
+    border-radius: 100%;
+    border: 0.5px solid grey;
+}
+.cotop button{
+    float: left;
+    background: url('./images/ljt1.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    margin-top: 8%;
+    margin-left: 40%;
+}
+.coname{
+    float: left;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-top: 9%;
+    line-height: 10%;
+    font-size: 18px;
+}
+.cotime{
+    float: left;
+    margin-left:-9%;
+    padding-top: 14%;
+    font-size: 12px;
+}
+.codown{
+    padding:16% 3% 0 5%;
+}
+.codown p{
+    font-size: 16px;
+    text-indent: 20px;
+    line-height: 27px;
+}
+/* 发表 */
+.toout{
+    background: url('./images/ljbg15.jpg') no-repeat;
+    padding-bottom:60%;
+}
+.topictitle{
+    justify-content: space-between;
+    padding-top: 5%;
+}
+.topictitle span{
+    margin-left: 25%;
+}
+.topictitle a{
+    font-size:18px;
+}
+.a1{
+    margin-left:10%;
+    
+}
+.a12{
+    width: 5%;
+    height: 5%;
+}
+.a2{
+    margin-left: 20%;
+}
+.tobody{
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0 5%;
+    margin-top: 3%;
+    overflow: hidden;
+    padding: 0 2%;
+    height: 40%;
+}
+.tobody img{
+    width: 55%;
+    height: 55%;
+    border-radius: 100%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+.tobody span{
+    font-size: 20px;
+}
+.tobody input{
+    /* background: url('./images/ljcarema.png'); */
+    margin-top: 5%;
+}
+.tobodyy{
+    border-left: 1px solid grey;
+    border-right: 2px solid grey;
+    border-bottom: 1px solid grey;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0 5%;
+    overflow: hidden;
+}
+.tobodyy textarea{
+    background: #fffbfa83;
+}
+/* 详情 */
+/* .dtitle{
+    background-color: rgb(204, 174, 238);
+    overflow: hidden;
+    padding:2% 5%;
+    position: fixed;
+    z-index:999;
+    top:0;
+    width: 100%; 
+    height: 6%;
+    font-size:22px;
+    color:white ;
+}
+.dtitles2{
+    float: left;
+    font-size: 22px;
+    margin-left: 35%;
+    padding-top: 5%;
+    margin-top:-1%;
+}
+.dtitles1{
+    float: left;
+    margin-top: 3%;
+} */
+
+
+
+
+
+/* 收藏 */
+.lshow{
+    display: block;
+}
+.lhidden{
+    display: none;
+}
+
+
+
+
+/* 我的 */
+.bcmine{
+    background-image: url('./images/minebc3.png');
+    height: 100px;
+    background-size: 100%;
+    width: 90%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: 0 5%;
+}
+.minetitle{
+    background-image:url('./images/dsheqv4.jpg');
+   
+    height:10%;
+    width: 100%;
+    font-size: 24px;
+    padding:2% 0 ;
+    text-align: center;
+    position: fixed;
+    z-index: inherit;
+    top:0;
+}
+.backimg{
+    background-size:100%;
+    object-fit: fill;
+    height:150%;
+    width:100%;
+    overflow: hidden; 
+    background-size:cover;
+    position:fixed;
+    z-index:-1;
+}
+.mineonbody{
+    position:'absolute';
+    display:'block';
+    bottom:'0%';
+    width:'90%';
+    left:'5%';
+    opacity:'0.8';
+    height:'35%';
+    background-color:'white';
+    border-top-left-radius:'10px';
+    border-top-right-radius:'10px'
+}
+/* Account */
+
+
+
+.acchead{
+    background-image: url('./images/albg5.jpg');
+    background-size: 100%;
+    text-align: center;
+    height: 6%;
+    width: 100%;
+    padding-top:4%;
+    overflow: hidden;
+    font-size: 19px;
+}
+.toubc{
+    background-image: url('./images/mhead.png');
+}
+.acctou{
+    float: right;
+    width:60%;
+}
+.accbodybc{
+    background-image: url('./images/dminebc.png');
+    background-size: 100%;
+    height: 20px;
+}
+.accbody{
+    float: left;
+    margin-top: 10%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20%;
+}
+.accbody p{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.accbody input{
+    background-color: white;
+    width:80%;
+    height:25px;
+    margin-left: 10%;
+}
+
+
+/* 风俗文化 */
+.lculterbg{
+    background-image: url('/images/lbg.jpg');
+}
+.lculterlist{
+    width:90%;
+    height: 90%;
+    margin:0 auto;
+    margin-top: 20%;
+}
+.lculterItem{
+    width:100%;
+    background-size: cover;
+    margin-top:5%;
+    /* height:; */
+}
+.lculterItem .lcultertitle p{
+    padding-top: 40%;
+}
+
+/* 搜索框 */
+.lfindresult{
+    display: none;
+    /* position: fixed; */
+}
