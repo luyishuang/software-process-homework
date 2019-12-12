@@ -64,6 +64,7 @@ import Zuixiao from './little/Zuixiao'
 import Tuisong from './little/Tuisong'
 import Game from './little/Game'
 import Qvshui from './game/Qvshui'
+import Dtlist from './little/Dtlist';
 
 
 class App extends React.Component {
@@ -97,8 +98,9 @@ class App extends React.Component {
         <Route path='/home/game1/qvshui' component={Qvshui}/>         
 
           
-          <Route path='/mine/tourist' component={Tourist}/>
-          <Route path='/mine/account' component={Account}/>
+        <Route path='/mine/tourist' component={Tourist}/>
+        <Route path='/mine/account' component={Account}/>
+        <Route path='/mine/dtlist' component={Dtlist}/>
       </Router>
       // </Provider>
     );

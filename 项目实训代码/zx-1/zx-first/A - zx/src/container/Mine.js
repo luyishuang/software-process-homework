@@ -14,13 +14,14 @@ export default class Mine extends Component{
                         <img src={`./yan/ytx.png`} style={{marginLeft:'35%',width:'30%',height:'auto',
                         borderRadius:'60px',border:'5px solid white'}}/>
                     </div>
-                    <div style={{float:'5%',bottom:'0%',width:'90%',marginLeft:'5%',opacity:'0.8',height:'auto',backgroundColor:'white'}}> 
-                        <div style={{textAlign:'center',paddingTop:'10%',fontSize:'22px'}}>aaa</div>
+                    <div style={{float:'5%',bottom:'0%',width:'90%',marginLeft:'5%',opacity:'0.8',height:'auto',backgroundColor:'rgb(247, 235, 221)'}}> 
+                        <div style={{textAlign:'center',paddingTop:'10%',fontSize:'20px'}}>小知</div>
                         <Link to='/mine/tourist'><p style={{textAlign:'center',paddingTop:'0%',fontSize:'22px',color:'black'}}>我的收藏</p></Link>
+                        <Link to='/mine/dtlist'><p style={{textAlign:'center',paddingTop:'0%',fontSize:'22px',color:'black'}}>我的动态</p></Link>
                         <Link to='/mine/account'><p style={{textAlign:'center',paddingTop:'0%',fontSize:'22px',color:'black'}}>编辑资料</p></Link>
                         <Link to='/login'><p style={{textAlign:'center',paddingBottom:'30%',fontSize:'22px',color:'black'}}>退出登录</p></Link>
                     </div>
-                    </div>
+                </div>
             </div>
         )
     }

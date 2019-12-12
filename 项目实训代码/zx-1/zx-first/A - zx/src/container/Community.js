@@ -27,17 +27,19 @@ export default class Community extends Component{
                         </div>
                     </div>
                 </Link>
-                <div className='topic'>
-                    <div className='cotop'>
-                        <Link to='/tab/parent'><img src={require('../images/ljtouxiang2.jpg')}/></Link>
-                        <span className='coname'>小行</span>
-                        <span className='cotime'>2019.01.01</span>
-                        <button></button>
+                <Link to='/community/detail'>
+                    <div className='topic'>
+                        <div className='cotop'>
+                            <Link to='/tab/parent'><img src={require('../images/ljtouxiang2.jpg')}/></Link>
+                            <span className='coname'>小行</span>
+                            <span className='cotime'>2019.01.01</span>
+                            <button></button>
+                        </div>
+                        <div className='codown'>
+                            <p>这次衡山行,最有感觉的几处地方,麻姑仙境,石浪,祝融庙宇等......这次衡山行,最有感觉的几处地方,麻姑仙境,石浪,祝融庙宇等......</p>
+                        </div>
                     </div>
-                    <div className='codown'>
-                        <p>这次衡山行,最有感觉的几处地方,麻姑仙境,石浪,祝融庙宇等......这次衡山行,最有感觉的几处地方,麻姑仙境,石浪,祝融庙宇等......</p>
-                    </div>
-                </div>
+                </Link>
                 <div className='topic'>
                     <div className='cotop'>
                         <Link to='/tab/parent'><img src={require('../images/ljtouxiang4.jpg')}/></Link>

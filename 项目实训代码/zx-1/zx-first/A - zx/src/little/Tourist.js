@@ -8,7 +8,7 @@ export default class Tourist extends Component{
                     <a style={{float:'left',marginLeft:'3%',marginBottom:'1%',fontSize:'28px'}} href='/#/tab'>
                         <img src={require('../images/dfanhui2.png')}/>
                     </a>
-                     <span style={{marginTop:'5%'}}>游玩记录</span>
+                     <span style={{marginTop:'8%'}}>我的收藏</span>
                 </div>
                 <div className='todiv'>
                     <div className="city">

@@ -43,8 +43,8 @@ export default class Account extends Component {
                     <span style={{ marginTop: '3%' ,float:'left',marginLeft:'30%'}}>我的资料</span>
                 </div>
                 <div className='acctou' style={{ position: 'fixed', right: '-20%',top:'15%'}}>
-                        <img src={`./yan/ytx.png`} style={{ height:'30%', width:'30%', borderRadius:'100%' }} />
-                    </div>
+                    <img src={`./yan/ytx.png`} style={{ height:'30%', width:'30%', borderRadius:'100%' }} />
+                </div>
 
                 <WingBlank>
                     <ImagePicker
@@ -65,11 +65,11 @@ export default class Account extends Component {
 
                 <div className='accbody'>
                     <p>用户名:</p>
-                    <input placeholder='aaa'></input>
-                    <p>年&ensp;&ensp;龄:</p>
+                    <input placeholder='小知'></input>
+                    <p>性&ensp;&ensp;别:</p>
                     <input placeholder='男' />
-                    <p>出生日期:</p>
-                    <input placeholder='123456' />
+                    <p>年&ensp;&ensp;龄:</p>
+                    <input placeholder='20' />
                 </div>
                 <Button style={{ textAlign: 'center', width: '80%', marginLeft: '10%' }}>保存</Button>
             </div>

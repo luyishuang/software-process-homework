@@ -9,7 +9,7 @@ export default class AppTab extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'home',
+      selectedTab: 'community',
     };
   }
   render() {
