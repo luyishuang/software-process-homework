@@ -61,6 +61,7 @@ import Mine from './container/Mine';
 import Searchspeak from './container/Searchspeak';
 import CulterDetail from './container/CulterDetail';
 import Culterlist from './container/Culterlist';
+import Detail from './little/Detail'
 
 class App extends React.Component {
   render() {
@@ -75,6 +76,7 @@ class App extends React.Component {
           <Route exact path='/join' component={Join}/>
           <Route exact path="/tab" component={Tab}  />
           <Route path='/community/topic' component={Topic}/>
+          <Route path='/community/detail' component={Detail}/>
           
           <Route exact path='/culter' component={Culterlist}/>
           <Route exact path='/culter/:name' component={CulterDetail}/>
