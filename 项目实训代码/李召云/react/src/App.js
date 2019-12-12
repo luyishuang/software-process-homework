@@ -61,6 +61,7 @@ import Mine from './container/Mine';
 import Searchspeak from './container/Searchspeak';
 import CulterDetail from './container/CulterDetail';
 import Culterlist from './container/Culterlist';
+import Tuisong from './little/Tuisong'
 
 class App extends React.Component {
   render() {
@@ -74,25 +75,23 @@ class App extends React.Component {
           <Route exact path="/login" component={Login}  />
           <Route exact path='/join' component={Join}/>
           <Route exact path="/tab" component={Tab}  />
-          <Route path='/community/topic' component={Topic}/>
           
-          <Route exact path='/culter' component={Culterlist}/>
-          <Route exact path='/culter/:name' component={CulterDetail}/>
+          <Route exact path='/result/:key' component={Searchspeak}/>
+          <Route path='/home/game' component={Game}/>
+          <Route path='/home/zuixiao' component={Zuixiao}/>
+          <Route path='/home/tuisong' component={Tuisong}/>
+
           <Route exact path='/city/:city/:tourist' component={Gugong}/>
           <Route exact path='/place/:placename' component={Taihe}/>
+          <Route exact path='/culter' component={Culterlist}/>
+          <Route exact path='/culter/:name' component={CulterDetail}/>
           {/* <Route exact path='/result/?find=:key' component={Searchspeak}/> */}
-          <Route exact path='/result/:key' component={Searchspeak}/>
-          
           {/* <Route exact path='/taihe' component={Taihe}/> */}
-
-          <Route path='/home/game' component={Game}/>
+          
+          <Route path='/community/topic' component={Topic}/>
+          <Route path='/community/detail' component={Detail}/>
           <Route path='/mine/tourist' component={Tourist}/>
           <Route path='/mine/account' component={Account}/>
-          <Route path='/home/zuixiao' component={Zuixiao}/>
-          <Route path='/home' component={Home}/>
-          <Route path='/dest' component={Destination}/>
-          <Route path='/comm' component={Community}/>
-          <Route path='/mine' component={Mine}/>
       </Router>
       // </Provider>
     );
@@ -100,4 +99,3 @@ class App extends React.Component {
 }
 
 export default App
-
