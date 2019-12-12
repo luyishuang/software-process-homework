@@ -39,7 +39,7 @@ export default class Home extends Component{
                     </div>
                 </Link>
                 <div style={{width:'100%'}}>
-                    <p style={{width:'95%',float:'left',marginLeft:'3%',fontSize:'26px',}}>文章推送<a style={{float:'right',fontSize:'16px',color:'#259B24'}} href='/home/Tuisong'>查看更多>></a></p>
+                    <p style={{width:'95%',float:'left',marginLeft:'3%',fontSize:'26px',}}>文章推送<a style={{float:'right',fontSize:'16px',color:'#259B24'}} href='/#/home/Tuisong'>查看更多>></a></p>
                 </div>
                 <Link to='/home/zuixiao'>
                 <div className="push">

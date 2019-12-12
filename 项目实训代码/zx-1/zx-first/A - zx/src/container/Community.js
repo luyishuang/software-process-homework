@@ -14,7 +14,7 @@ export default class Community extends Component{
                 </div>
                 <div style={{marginTop:'17%'}} ></div>
 
-                <Link to='/community/detail' >
+                <Link to='/community/detail'>
                     <div className='topic'  >
                         <div className='cotop'>
                             <Link to='/tab/parent'><img src={require('../images/ljtouxiang3.jpg')}/></Link>

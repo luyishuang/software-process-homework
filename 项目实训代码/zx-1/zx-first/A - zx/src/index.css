@@ -1,4 +1,7 @@
 
+ul,li{
+    list-style: none;
+}
 /* 登录页面 */
 .login{
 
@@ -192,15 +195,15 @@
 
 /* 目的地*/
 .searchbar{
-    height: 10%;
+    height: 9%;
     /* background-color: #259B24; */
-    background: url('/images/dlbg6.jpg') no-repeat;
+    background: url('/images/lbg5.jpg') no-repeat;
     background-size: cover;
-    padding:2% 3% 3% 0;
+    padding:3% 3%;
     width: 100%;
     color:wheat;
     position: fixed;
-    z-index: 999;
+    z-index:999;
     top:0;
 }
 /* .am-picker-col-mask{
@@ -247,7 +250,6 @@
     width: 100%;
     background-image: url('/images/dlbg.gif');
     background-repeat: repeat-y;
-    
     background-attachment :fixed;
     background-size: cover;
 }
@@ -264,7 +266,7 @@
     overflow: hidden;
 }
 .hot{
-    background-image:url('./images/dtaofu4.jpg' ) ;
+    /* background-image:url('./images/dtaofu4.jpg' ) ; */
     background-repeat: no-repeat;
     border-radius: 3px;
     background-size: 100%;
@@ -521,7 +523,14 @@
     margin-left: 4%;
 }
 
-
+/* 12-10 */
+.lspeak{
+    width:100%;
+    background-image: url('/images/lbg.jpg');
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
+}
 
 /* 收藏 */
 .lshow{
@@ -670,7 +679,7 @@
     background: #fffbfa83;
 }
 /* 详情 */
-.dtitle{
+/* .dtitle{
     background-color: rgb(204, 174, 238);
     overflow: hidden;
     padding:2% 5%;
@@ -692,7 +701,7 @@
 .dtitles1{
     float: left;
     margin-top: 3%;
-}
+} */
 
 
 
@@ -785,7 +794,6 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 20%;
-    /* background-color: white; */
 }
 .accbody p{
     margin-left: 10%;
@@ -796,4 +804,31 @@
     width:80%;
     height:25px;
     margin-left: 10%;
+}
+
+
+/* 风俗文化 */
+.lculterbg{
+    background-image: url('/images/lbg.jpg');
+}
+.lculterlist{
+    width:90%;
+    height: 90%;
+    margin:0 auto;
+    margin-top: 20%;
+}
+.lculterItem{
+    width:100%;
+    background-size: cover;
+    margin-top:5%;
+    /* height:; */
+}
+.lculterItem .lcultertitle p{
+    padding-top: 40%;
+}
+
+/* 搜索框 */
+.lfindresult{
+    display: none;
+    /* position: fixed; */
 }
