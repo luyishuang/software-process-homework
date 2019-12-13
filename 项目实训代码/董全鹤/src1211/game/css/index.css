@@ -1,0 +1,93 @@
+ul,li{padding: 0;margin: 0;list-style: none}
+.ziti{
+  margin: 0 5%;
+  margin-top:35rem;
+  font-size:20px;
+  line-height:30px;
+}
+.ziti p{
+  font-family:'YouYuan';
+  word-wrap: break-word;
+
+
+}
+.gghead2{
+  background: url('/images/lbg5.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 6%;
+  padding-top:4%;
+  position: fixed;/*悬停搜索框的关键样式*/
+  top: 0px;
+  width: 100%;
+  position: fixed;;
+}
+.gghead2 span{
+  float: left;
+  margin-left: 25%;
+  margin-top: 2%;
+  font-size: 20px;
+}
+.fanhui{
+  height: 10%;
+}
+.guoguan{
+  text-align: center;
+  font-size: 30px;
+}
+.bg img{
+  width: 100%;
+}
+.thumbnail{
+  width: 5rem;
+  position: absolute;
+  margin-left: 10%;
+  top: 6rem;
+  
+}
+.game{
+  width: 90%;
+  position: absolute;
+  top: 14rem;
+  padding-left: 10%;
+}
+.game li
+{
+  position: relative;
+  overflow: hidden;
+}
+.lic1{
+  width: 40%;
+  height: 40%;
+  float: left;
+}
+.mask
+{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.press1
+{
+  width: 6.422rem;
+  position: absolute;
+  left: 1.8125rem;
+  top: 12.234rem;
+}
+.press2
+{
+  width: 6.422rem;
+  position: absolute;
+  left: 1.8125rem;
+  top: 13.609rem;
+}
+.press
+{
+  width: 4.984rem;
+  position: absolute;
+  left: 2.625rem;
+  top: 6.328rem;
+}
