@@ -99,7 +99,7 @@ export default class Searchspeak extends Component {
                 <div style={{marginTop:'10%',padding:'0% 2% 0% 2%'}}>
                     <div>
                         <p>景区</p>
-                        <Link to='/city/北京/故宫'>故宫</Link>
+                        <Link to='/city/北京市/故宫'>故宫</Link>
                         <Link to='/place/太和殿'>太和殿</Link>
                     </div>
                     <div>

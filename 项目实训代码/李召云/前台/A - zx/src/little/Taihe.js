@@ -6,10 +6,12 @@ export default class Taihe extends Component{
     constructor(){
         super();
         this.state={
+            username:store.getState().getuser,
             data:'',
             likeflag:'',
             musicpath:'images/music/bj1.mp3',
-            isPlay:false
+            isPlay:false,
+            userlike:[]
         }
     }
     componentDidMount(){
@@ -20,15 +22,27 @@ export default class Taihe extends Component{
         //         data:res.jdcontent
         //     })
         // })
-        fetch('/addlike',{
-            method:'POST',
-            mode : 'cors',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: `username=&bpwd=12`
+        fetch('/getlike?username='+this.state.username.loginname)
+            .then(res=>res.json())
+            .then(res=>{
+                console.log(res);
+                this.setState({
+                    userlike:res.message
+                },()=>{
+                    console.log(this.state.userlike);  
+                    for(var i=0;i<this.state.userlike.length;i++){
+                        if(this.state.userlike[i]===this.placename){
+                            console.log(this.placename);
 
-        })
+                            this.setState({
+                                likeflag:'like'
+                            })
+                        }
+                    }
+                    console.log(this.placename);
+                    
+                })
+            });
         // this.changelike=store.subscribe(()=>{
         //     this.setState({
         //         likeflag:store.getState().changelike
@@ -44,28 +58,18 @@ export default class Taihe extends Component{
         window.history.back(-1)
     }
     addlike=()=>{
+        
         // if(this.state.likeflag === 'dislike'){
-        //     this.setState({
-
-        //             likeflag:'like'
-                
-        //     })
-        // }else{
-        //     this.setState({
-        //             likeflag:'dislike'
-        //     })
-        // }
-        if(this.state.likeflag === 'dislike'){
-            store.dispatch(tolike('like'));
+        //     store.dispatch(tolike('like'));
             
-        }else{
-            store.dispatch(todislike('dislike'));
-        }
-        console.log(this.state.likeflag,this.state.likeinitial);
+        // }else{
+        //     store.dispatch(todislike('dislike'));
+        // }
+        // console.log(this.state.likeflag,this.state.likeinitial);
         
     }
     render(){
-        let placename = this.props.match.params.placename;
+        this.placename = this.props.match.params.placename;
         console.log(this.props);
         return(
             <div>
@@ -73,7 +77,7 @@ export default class Taihe extends Component{
                     {/* <span style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} onClick={()=>this.goback()}>&lt;</span> */}
                     <span style={{float:'left',marginLeft:'3%',marginBottom:'4%'}} onClick={()=>this.goback()}><img style={{width:'20px',lineHeight:'20px'}} src={require('../images/icon/fanhui.png')}/></span>
 
-                    <span style={{marginTop:'5%'}}>{placename}</span>
+                    <span style={{marginTop:'5%'}}>{this.placename}</span>
                     <span flage={this.state.likeflag} onClick={this.addlike} style={{width:'22px'}}>
                         <img className={this.state.likeflag == 'like'?'lhidden':'lshow'} style={{width:'22px',lineHeight:'20px',position:'fixed',right:'3%',top:'2%'}} src='../images/icon/xihuan2.png'/>
                         <img className={this.state.likeflag == 'like'?'lshow':'lhidden'}  style={{width:'26px',lineHeight:'26px',position:'fixed',right:'3%',top:'2%'}} src='../images/icon/xihuan.png'/>

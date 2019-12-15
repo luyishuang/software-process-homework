@@ -4,9 +4,9 @@ import store from '../store';
 import {tolike,todislike} from '../actions/index'
 // import Audio from '../container/Audio';
 
-var userlike =[
-   '太和殿','养心殿' 
-]
+// var userlike =[
+//    '太和殿','养心殿' 
+// ]
 
 var list =[
     {
@@ -59,46 +59,80 @@ export default class Gugong extends Component{
         console.log(this.state.username);
         console.log(this.tourist,this.city);
 
-        // fetch('/jdlist',{
-        //     method: 'POST',
-        //     headers: {'Content-Type': 'application/json; charset=utf-8'},
-        //     body: `city=${city}&jqname=${tourist}`
-        // })
-        // .then(res=>res.json())
-        // .then(res=>{
-        //     let reslist = [...res.message];
-        //     this.setState({
-        //         placelist:reslist
-        //     })
-        // })
+        fetch('/jdlist/?city='+this.city+'&jqname='+this.tourist)
+        .then(res=>res.json())
+        .then(res=>{
+            let reslist = [...res.message];
+            console.log(reslist);
+            this.setState({
+                placelist:reslist
+            },()=>{
+                this.newlist = [...this.state.placelist];
+                console.log(this.state.username);
+                fetch('/getlike?username='+this.state.username.loginname)
+                    .then(res=>res.json())
+                    .then(res=>{
+                        console.log(res);
+                        this.setState({
+                            userlike:res.message
+                        },()=>{
+                            console.log(this.state.userlike,this.state.placelist);  
+                            for(var i=0;i<this.newlist.length;i++){
+                                for(var j=0;j<this.state.userlike.length;j++){
+                                    if(this.state.userlike[j] === this.newlist[i]['placename'])
+                                        this.newlist[i]['likeflag']='like';
+                                        console.log(this.newlist[i]['likeflag'],this.state.userlike[j]);
+                                }
+                            }
+                            this.setState({
+                                placelist:this.newlist
+                            })
+                        })
+                    });
+            })
+        })
         /**
          * 获取收藏列表
          */
-        // fetch('/getlike')
+        // this.newlist = [...list];
+        // this.newlist = [...this.state.placelist];
+        // console.log(this.state.username);
+        // fetch('/getlike?username='+this.state.username.loginname)
         //     .then(res=>res.json())
         //     .then(res=>{
         //         console.log(res);
         //         this.setState({
         //             userlike:res.message
+        //         },()=>{
+        //             console.log(this.state.userlike,this.state.placelist);  
+        //             for(var i=0;i<this.newlist.length;i++){
+        //                 for(var j=0;j<this.state.userlike.length;j++){
+        //                     if(this.state.userlike[j] === this.newlist[i]['placename'])
+        //                         this.newlist[i]['likeflag']='like';
+        //                         console.log(this.newlist[i]['likeflag'],this.state.userlike[j]);
+        //                 }
+        //             }
+        //             this.setState({
+        //                 placelist:this.newlist
+        //             })
         //         })
         //     });
-        this.newlist = [...list];
 
-        this.setState({
-            userlike:[...userlike],
-        },()=>{
-            console.log(this.state.userlike,this.state.placelist);  
-            for(var i=0;i<this.newlist.length;i++){
-                for(var j=0;j<this.state.userlike.length;j++){
-                    if(this.state.userlike[j] === this.newlist[i]['placename'])
-                        this.newlist[i]['likeflag']='like';
-                        console.log(this.newlist[i]['likeflag'],userlike[j]);
-                }
-            }
-            this.setState({
-                placelist:this.newlist
-            })
-        })
+        // this.setState({
+        //     userlike:[...userlike],
+        // },()=>{
+        //     console.log(this.state.userlike,this.state.placelist);  
+        //     for(var i=0;i<this.newlist.length;i++){
+        //         for(var j=0;j<this.state.userlike.length;j++){
+        //             if(this.state.userlike[j] === this.newlist[i]['placename'])
+        //                 this.newlist[i]['likeflag']='like';
+        //                 console.log(this.newlist[i]['likeflag'],userlike[j]);
+        //         }
+        //     }
+        //     this.setState({
+        //         placelist:this.newlist
+        //     })
+        // })
     }
 
     
@@ -119,6 +153,19 @@ export default class Gugong extends Component{
                     userlike:newuserlike
                 },()=>{
                     console.log(this.state.userlike);
+                    fetch('/addlike',{
+                        method:'POST',
+                        mode : 'cors',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: `username=${this.state.username.loginname}&title=${newlist[idx]['placename']}`
+            
+                    })
+                    .then(res=>res.json())
+                    .then(res=>{
+                        console.log(res);
+                    })
                 })
             }
             else if(newlist[idx]['likeflag']==='like'){
@@ -131,6 +178,19 @@ export default class Gugong extends Component{
                         userlike:newuserlike
                 },()=>{
                     console.log(this.state.userlike);
+                    fetch('/dellike',{
+                        method:'POST',
+                        mode : 'cors',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: `username=${this.state.username.loginname}&title=${newlist[idx]['placename']}`
+            
+                    })
+                    .then(res=>res.json())
+                    .then(res=>{
+                        console.log(res);
+                    })
                 })
             }
             return {
