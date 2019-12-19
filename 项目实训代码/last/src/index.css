@@ -1,0 +1,626 @@
+@import '~antd/dist/antd.css';
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  background-color: white;
+}
+ul,li,a{
+  list-style:none;
+}
+body{
+    background: url('./img/7.jpg');
+    background-position-y: -120px;
+    background-size:cover;
+    /* overflow: hidden; */
+}
+/* 登陆页面 */
+.bg{
+    margin:0 auto;
+}
+.bg0{
+    margin:0 auto;
+    width:1200px;
+}
+.top{
+    margin:0 auto;
+    margin-top:50px;
+    width:570px;
+    height: 450px;
+}
+.title{
+    color:#41AA3E;
+    padding-left:135px;
+    padding-top: 30px;
+    padding-bottom:40px;
+    font-size: 34px;
+    border-bottom:1px solid grey;
+    background: url('./img/14.png') no-repeat ;
+}
+.content{
+    font-size:20px;
+    padding-left: 30px;
+}
+.con1{
+    padding-left:80px;
+    padding-top:56px;
+}
+.con2{
+    padding-left:80px;
+    padding-top:15px;
+}
+.content>.con2:first-child{
+    padding-top:30px;
+}
+.con2 input{
+    font-size: 16px;
+    width:200px;
+    height:30px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+.con1 input{
+    font-size: 16px;
+    width:200px;
+    height:30px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+.con button{
+    font-size:20px;
+    width:252px;
+    height:40px;
+    margin:50px 50px 30px 100px;
+    background-color:rgba(6, 190, 6, 0.5);
+    color:white;
+    border:0;
+    border-radius: 6px;
+}
+
+
+/* 导航页 */
+.left{
+    position: fixed;
+    width: 260px;
+    background-color: rgba(0, 128, 0, 0.5);
+    border-radius: 30px;
+    height:657px;
+}
+.left img{
+    padding-left: 42px;
+}
+.left li{
+    padding-top: 32px;
+    padding-bottom:32px;
+    font-size: 20px;
+    /* border-bottom: 1px dotted black; */
+}
+.left a{
+    margin:0px 80px;
+    color: rgba(255, 255, 255);
+    
+
+}
+
+.out{
+    float: right;
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(0, 128, 0, 0.5);
+    width: 870px;
+}
+
+/* 首页 */
+
+.syout{
+    /* height: 635px; */
+}
+.syout p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.syout h1{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.syin{
+    width:750px;
+    margin:0 auto;
+}
+.syin div{
+    float:left;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    background: url('./img/13.png');
+    background-size:cover;
+    text-align: center;
+    margin-top: 30px;
+    display:block;
+    margin-bottom: 50px;
+}
+.syin p{
+    margin-left: -10px;
+    margin-top: 42px;
+}
+/* person页面 */
+.psout{
+    height: 657px;
+}
+.psup{
+    width: 870px;
+    height: 90px;
+    border-bottom:1px solid grey;
+}
+.psup span{
+    line-height: 90px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+.psup input{
+    margin-left: 80px;
+    padding-left: 5px;
+    width: 280px;
+    height: 40px;
+    border-radius: 9px 0 0 9px;
+    border: 0;
+    position: relative;
+    background: rgba(255, 255, 255, 0.664);
+}
+.psupbutton{
+    opacity: 0.664 ;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius:0 9px 9px 0;
+    background: url('./img/search.png') ;
+    position: absolute;
+    top: 49px;
+}
+.psmiddle{
+    width: 870px;
+    height: 60px;
+    padding-left: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid grey;
+}
+.psmiddle input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.psmiddle span{
+    padding-left: 110px;
+    font-size: 18px;
+}
+.psdown{
+    width: 870px;
+    padding: 10px 0;
+}
+.psdown li{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    line-height: 40px;
+}
+.psdown input{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+    margin-right: 40px;
+}
+.psdown span{
+    float: left;
+    font-size: 18px;
+    width:155px;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.psdown button{
+    background: rgba(255, 255, 0, 0.308);
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+    margin-left: 25px;
+    margin-right: 8px;
+}
+.psdown input{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+/* 话题页面 */
+.photo{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.htdown{
+    width: 870px;
+    padding-top: 10px;
+}
+.htdown li{
+    padding-top: 15px;
+    padding-bottom: 48px;
+    line-height: 26px;
+}
+.htdown button{
+    background: rgba(255, 255, 0, 0.308);
+    font-size: 14px;
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+.htdown input{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 0 50px 0 40px;
+}
+.htdown span{
+    float: left;
+    margin-right: 15px;
+    width: 135px;
+    word-wrap: break-word;
+    font-size: 18px;
+    text-align: center;
+}
+.htdown input{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+/* 用户页面 */
+.yhmiddle{
+    width: 870px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 66px;
+    border-bottom: 1px solid grey;
+}
+.yhmiddle input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.yhmiddle span{
+    font-size: 18px;
+}
+.middles1{
+    padding-left: 40px;
+}
+.middles2{
+    padding-left: 90px;
+}
+.yhdown{
+    width: 870px;
+}
+.yhdown li{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    line-height: 40px;
+}
+.yhdown input{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.span1{
+    float: left;
+    margin-left: 20px;
+    font-size: 18px;
+    width: 160px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 10px;
+}
+.span2{
+    float: left;
+    font-size: 18px;
+    width: 130px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 10px;
+}
+.span2 img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.yhdown input{
+    width: 18px;
+    height: 18px;
+}
+.yhdown button{
+    background: rgba(255, 255, 0, 0.308);
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+/* 分页器 */
+/* .pagination-container {
+    margin: 0 15px;
+  }
+  
+  .custom-pagination-with-icon .am-pagination-wrap-btn-prev .am-button-inline{
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  .custom-pagination-with-icon .am-pagination-wrap-btn-next .am-button-inline{
+    padding-left: 10px;
+    padding-right: 0;
+  }
+  .arrow-align {
+    display: flex;
+    align-items: center;
+  }
+  .sub-title {
+    color: #888;
+    font-size: 14px;
+    padding: 30px 0 18px 0;
+  } */
+.yhbottom{
+    background-color: burlywood;
+    font-size: 18px;
+    /* color: white; */
+}
+.yhbottom div{
+    float: left;
+}
+.am-button{
+    background-color: rgba(255, 255, 0, 0.308);
+    border-radius: 5px;
+    /* padding-bottom: 50px; */
+    margin-bottom: 30px;
+    margin-left: 170px;
+}
+.am-button span{
+    margin-top: 30px;
+}
+.am-flexbox-item{
+    /* background-color: coral; */
+}
+.active{
+    /* background-color: crimson; */
+    margin-left: 170px;
+}
+
+/* 文章管理 */
+.wzup{
+    width: 870px;
+    height: 90px;
+    border-bottom:1px solid grey;
+}
+.wzup span{
+    line-height: 90px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+.wzup input{
+    margin-left: 80px;
+    padding-left: 5px;
+    width: 280px;
+    height: 40px;
+    border-radius: 9px 0 0 9px;
+    border: 0;
+    position: relative;
+    background: rgba(255, 255, 255, 0.664);
+}
+.wzupbutton{
+    opacity: 0.664 ;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius:0 9px 9px 0;
+    background: url('./img/search.png') ;
+    position: absolute;
+    top: 49px;
+}
+.wzmiddle{
+    width: 870px;
+    height: 60px;
+    padding-left: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid grey;
+}
+.wzmiddle input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.wzmiddle span{
+    /* padding-left: 110px; */
+    font-size: 18px;
+}
+.middlew1{
+    padding-left: 80px;
+}
+.middlew2{
+    padding-left: 240px;
+}
+.wzdown{
+    width: 870px;
+}
+.wzdown li{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    line-height: 40px;
+}
+.wzdown input{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.span1{
+    float: left;
+    margin-left: 20px;
+    font-size: 18px;
+    width: 160px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 10px;
+}
+.span2{
+    float: left;
+    font-size: 18px;
+    width: 130px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 10px;
+}
+.span2 img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.wzdown input{
+    width: 18px;
+    height: 18px;
+}
+.wzdown button{
+    background: rgba(255, 255, 0, 0.308);
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* 景点管理 */
+.jdup{
+    width: 870px;
+    height: 90px;
+    border-bottom:1px solid grey;
+}
+.jdup span{
+    line-height: 90px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+.jdup input{
+    margin-left: 80px;
+    padding-left: 5px;
+    width: 280px;
+    height: 40px;
+    border-radius: 9px 0 0 9px;
+    border: 0;
+    position: relative;
+    background: rgba(255, 255, 255, 0.664);
+}
+.jdup button{
+    opacity: 0.664 ;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius:0 9px 9px 0;
+    background: url('./img/search.png') ;
+    position: absolute;
+    top: 49px;
+}
+.jdmiddle{
+    width: 870px;
+    height: 60px;
+    padding-left: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid grey;
+}
+.jdmiddle input{
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.jdmiddle span{
+    /* padding-left: 110px; */
+    font-size: 18px;
+}
+.middlej1{
+    padding-left: 40px;
+}
+.middlej2{
+    padding-left: 110px;
+}
+.jddown{
+    width: 870px;
+}
+.jddown li{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    line-height: 40px;
+}
+.jddown input{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 40px;
+}
+.jdspan2{
+    float: left;
+    font-size: 18px;
+    width: 160px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 10px;
+}
+.jdspan2 img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.jddown input{
+    width: 18px;
+    height: 18px;
+}
+.jddown button{
+    background: rgba(255, 255, 0, 0.308);
+    border: 0;
+    border-radius: 5px;
+    width:50px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.addart{
+    margin-left: 120px;
+    opacity: 0.78 ;
+    border: 0;
+    border-radius: 5px;
+    width:120px;
+    height:30px;
+}
+.addyhit h3{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.addyhit input{
+    opacity: 0.78;
+}
+.addyhit button{
+    color: black;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    opacity: 0.78;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
