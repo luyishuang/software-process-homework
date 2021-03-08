@@ -35,7 +35,7 @@ export default class Idea extends Component {
                                     [1,2].map((item)=>(
                                         <Flex.Item>
                                             <img src={require('./img/idea'+item+'.jpg')} style={{width:'100%'}}/>
-                                            <div style={{wdith:'100%',backgroundColor:'#fff'}}>
+                                            <div style={{width:'100%',backgroundColor:'#fff'}}>
                                                 <img src={require(`./img/ihead${item}.jpg`)} style={{width:'30px',height:'30px',borderRadius:'15px',marginTop:'-15px'}}/>
                                                 <span style={{fontSize:'13px',marginLeft:'8px'}}>{username[item-1]}</span>
                                                 <i style={{fontSize:'22px',lineHeight:'22px',color:'red',float:'right'}} className="iconfont icon-xihuan"></i>
